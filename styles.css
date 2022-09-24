@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+:root {
+    --Violet: hsl(257, 40%, 49%);
+    --SoftMagenta: hsl(300, 69%, 71%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: white;
+    background-color: var(--Violet);
+    background-image: url('./images/bg-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+main {
+    width: 595px;
+    height: 1448px;
+    margin:  75px auto 40px;
+}
+
+/************ Section 1 **************/
+#section1 {
+    height: 724px;
+}
+#logo-container {
+    width: 180px;
+}
+#mockup {
+    width: 595px;
+}
+
+/************ Section 2 **************/
+#section2 {
+    height: 724px;
+}
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 46px;
+    text-align: center;
+    height: 170px;
+}
+#section2 p {
+    font-size: 2.1rem;
+    text-align: center;
+    height: 280px;
+}
+.btn-register {
+    text-align: center;
+}
+.btn-register a {
+    width: 400px;
+    height: 86px;
+    border-radius: 50px;
+    font-size: 2.5rem;
+    background-color: white;
+    color: var(--Violet);
+    display: inline-block;
+    padding: 12px;
+    text-decoration: none;
+    margin-bottom: 126px;
+}
+.btn-register a:hover{
+    background-color: var(--SoftMagenta);
+    color: white;
+}
+.social-container {
+    text-align: center;
+}
+.redes {
+    width: 208px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+.redes a {
+    text-decoration: none;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    font-size: 2rem;
+    padding-top: 12px;
+}
+.redes a:hover {
+    border-color: var(--SoftMagenta);
+    color: var(--SoftMagenta);
+}
+
+/************ Footer *****************/
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: yellow; }
+
+
+@media only screen and (min-width: 1284px){
+    body {
+        background-image: url('./images/bg-desktop.svg');
+        background-size: cover;
+    }
+    main {
+        margin: 60px auto 0px;
+        width: 1284px;
+        height: 700px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    /************ Section 1 **************/
+    #section1 {
+        width: 753px;
+        height: 700px;
+    }
+    #logo-container {
+        height: 134px;
+    }
+    #mockup{
+        width: 696px;
+    }
+    /************ Section 2 **************/
+    #section2 {
+        width: 753px;
+        height: 700px;
+    }
+    #section2 h1 {
+        margin-top: 152px;
+        height: 160px;
+        text-align: left;
+        padding-right: 93px;
+        font-size: 2.8rem;
+    }
+    #section2 p {
+        font-size: 1.2rem;
+        text-align: left;
+        padding-right: 36px;
+        height: 74px;
+    }
+    .btn-register{
+        text-align: left;
+        padding-top: 25px;
+        height: 253px;
+    }
+    .btn-register a{
+        width: 200px;
+        height: 58px;
+        font-size: 20px;
+        padding-top: 14px;
+        text-align: center;
+    }
+    .social-container {
+        text-align: right;
+    }
+    .redes a{
+        padding-right: 12px;
+
+    }    
+}
